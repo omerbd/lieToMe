@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Node.JS File Upload</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+	<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+  </head>
+  <!--
+  <body>
+    <form class="fileupload" action="upload" method="post" enctype="multipart/form-data">
+      <h1>Upload File Here</h1>
+      <input type="file" name="upfile" value="">
+      <input type="submit" />
+		<label for="file-upload" id="file-drag">
+			<div id="response" class="hidden">
+			<div id="messages"></div>
+			<div id="start">
+			<i class="fa fa-download" aria-hidden="true"></i>
+		</label>	
+    </form>
+  </body>
+  -->
+ <body>
+
+  <div class="row">
+		<div class="col s12">
+			<!-- Uploader Dropzone -->
+			<div id="zdrop" class="fileuploader ">
+				<div id="upload-label" style="width: 200px;">
+					<i class="material-icons">cloud_upload</i>
+					<span class="title">Drag your Files here</span>
+					<span>Some description here <span/>
+				</div>
+			</div>
+			<!-- Preview collection of uploaded documents -->
+			<div class="preview-container">
+				<div class="header">
+					<span>Uploaded Files</span>	
+					<i id="controller" class="material-icons">keyboard_arrow_down</i>
+				</div>
+				<div class="collection card" id="previews">
+					<div class="collection-item clearhack valign-wrapper item-template" id="zdrop-template">
+						<div class="left pv zdrop-info" data-dz-thumbnail>
+							<div>
+								<span data-dz-name></span> <span data-dz-size></span>
+							</div>
+							<div class="progress">
+								<div class="determinate" style="width:0" data-dz-uploadprogress></div>
+							</div>
+							<div class="dz-error-message"><span data-dz-errormessage></span></div>
+						</div>
+
+						<div class="secondary-content actions">
+							<a href="#!" data-dz-remove class="btn-floating ph red white-text waves-effect waves-light"><i class="material-icons white-text">clear</i></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/materialize.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/dropzone.js"></script>
+		<script  src="js/index.js"></script>
+	</body>
+</html>
